@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule ^sarpra-an/pinjam$ sarpra-an/view/peminjaman-view.php [L]
