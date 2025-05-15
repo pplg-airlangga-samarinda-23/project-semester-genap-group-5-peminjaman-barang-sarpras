@@ -64,10 +64,14 @@
         <h1>SMK TI AIRLANGGA</h1>
     </header>
     <div class="btn">
-        <button  class="cursor-pointer px-6 py-4 text-black bg-zinc-200 text-lg text-xl uppercase rounded-2xl border duration-0,5 transition-shadow select-none shadow-xl/60 font-[Helvetica]  hover:text-white hover:bg-black" style="text-align: center">PENGEMBALIAN BARANG</button>
-        <img src="{{ asset('aset/download.jpg') }}" alt="">
-        <button class="button" class="cursor-pointer">ㅤㅤㅤPEMINJAMANㅤㅤㅤ</button>
+        <button  class="button" style="text-align: center" onclick="window.location.href='/pengembalian';">PENGEMBALIAN BARANG</button>
+        <img src="{{ asset('aset/logo.png') }}" alt="">
+        <button class="button" class="cursor-pointer" onclick="window.location.href='/pinjaman';">ㅤㅤㅤPEMINJAMANㅤㅤㅤ</button>
     </div>
     
   </body>
 </html>
+
+
+
+{{-- cursor-pointer px-6 py-4 text-black bg-zinc-200 text-lg text-xl uppercase rounded-2xl border duration-0,5 transition-shadow select-none shadow-xl/60 font-[Helvetica]  hover:text-white hover:bg-black --}}
