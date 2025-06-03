@@ -37,11 +37,11 @@
 
 
         <button class="bg-slate-600 cursor-pointer rounded-md w-4/6 font-bold hover:bg-slate-500 ">submit</button>
-        <div class="flex flex-row items-start w-5/6">
-            <button class="w-1/3 bg-slate-600 rounded-r-2xl -translate-x-10 cursor-pointer hover:bg-red-600 ">kebali</button>
-        </div>
+      
     </form>
-
+    <div class="flex flex-row items-start w-5/6">
+        <button class="w-1/3 bg-slate-600 rounded-r-2xl -translate-x-10 cursor-pointer hover:bg-red-600 " onclick="window.location.href='/';">kembali</button>
+    </div>
 
 </body>
 </html>
