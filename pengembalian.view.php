@@ -19,24 +19,24 @@
         </div>
         <div class="flex flex-col w-5/6">
             <label for="nama" class="font-sans font-bold">Kelas</label>
-            <input type="text" class="border rounded-md h-10 capitalize px-8 bg-white" name="kelas-kembali" id="" placeholder="naim">
+            <input type="text" class="border rounded-md h-10 capitalize px-8 bg-white" name="kelas-kembali" id="" placeholder="xpplg">
         </div>
         <div class="flex flex-col w-5/6">
             <label for="nama" class="font-sans font-bold">Nisn</label>
-            <input type="text" class="border rounded-md h-10 capitalize px-8 bg-white" name="nisn-kembali" id="" placeholder="naim">
+            <input type="text" class="border rounded-md h-10 capitalize px-8 bg-white" name="nisn-kembali" id="" placeholder="00*****">
         </div>
         <div class="flex flex-col w-5/6">
             <label for="nama" class="font-sans font-bold">Nama Barang</label>
-            <input type="text" class="border rounded-md h-10 capitalize px-8 bg-white" name="nama-barang-kembali" id="" placeholder="naim">
+            <input type="text" class="border rounded-md h-10 capitalize px-8 bg-white" name="nama-barang-kembali" id="" placeholder="stop kontak">
         </div>
 
         <div class="flex flex-col w-5/6">
-            <label for="nama" class="font-sans font-bold">Nama Barang</label>
-            <input type="file" name="file" id="" class="bg-amber-500 w-1/3">
+            <label for="nama" class="font-sans font-bold">foto bukti Pengembalian</label>
+            <input type="file" name="imagin_dragon" id="" class="bg-amber-500 w-1/3">
         </div>
 
 
-        <button class="bg-slate-600 cursor-pointer rounded-md w-4/6 font-bold hover:bg-slate-500 ">submit</button>
+        <button class="bg-slate-600 cursor-pointer rounded-md w-4/6 font-bold hover:bg-slate-500 " name="subm">submit</button>
       
     </form>
     <div class="flex flex-row items-start w-5/6">

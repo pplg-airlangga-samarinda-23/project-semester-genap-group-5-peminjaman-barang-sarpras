@@ -59,13 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 foreach($cek_siswa_last->fetchAll(PDO::FETCH_ASSOC) as $data_s){
                     foreach($cek_barang->fetchAll(PDO::FETCH_ASSOC) as $data_b){
                         $pinjam_in=$connection->prepare("INSERT INTO `Peminjaman` VALUES(null,:nama,:nisn,:n_barang,:k_barang,kondisi_barang,:tsmp) ");
-                        $new_siswa->bindParam(":nama", $data_s['siswa']);
-                        $new_siswa->bindParam(":nisn", $data_s['siswa']);
-                        $new_siswa->bindParam(":n_barang", $data_b['nama_barang']);
-                        $new_siswa->bindParam(":k_barang", $data_b['kode_barang']);
-                        $new_siswa->bindParam(":kondisi_barang", $data_b['kondisi']);
-                        $new_siswa->bindParam(":tsmp", $tsmp);
-                        $new_siswa->execute();
+                        $pinjam_in->bindParam(":nama", $data_s['siswa']);
+                        $pinjam_in->bindParam(":nisn", $data_s['siswa']);
+                        $pinjam_in->bindParam(":n_barang", $data_b['nama_barang']);
+                        $pinjam_in->bindParam(":k_barang", $data_b['kode_barang']);
+                        $pinjam_in->bindParam(":kondisi_barang", $data_b['kondisi']);
+                        $pinjam_in->bindParam(":tsmp", $tsmp);
+                        $pinjam_in->execute();
                         break;
                     }
                 }
