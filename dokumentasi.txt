@@ -1,0 +1,64 @@
+* database
+    untuk memulai di server baru bisa mengatur username dan password di 
+    dir  backside/db-name
+
+    dan menjalankan / membuka di web file db-con untuk membuat database 
+    dir backside/db-con
+
+
+*system kerja 
+    index hanya menampilkan dua tombol untuk redirect menuju pinjam atau pengembalian 
+    peminjaman.view.php hanya sebagai tampilan ,data yang masuk akan di kirim ke backside/pinjam
+    begitu juga peengembalian.view.php hanya sebagai tampilan ,data yang masuk akan di kirim ke backside/kembali
+
+
+
+
+*output data di admin
+
+//output data pinjam dari $_SESSION['pinjam'] 
+
+    $data_pinjam=explode('!',$_SESSION['pinjam']);
+    foreach($data_pinjam as $pinjaman){
+        if($pinjaman==null){continue;}
+        $pinjaman=unserialize($pinjaman);
+
+        $pinjaman['nama'];
+        $pinjaman['NSIN'];
+        $pinjaman['nama_barang'];
+        $pinjaman['kode_barang'];
+        $pinjaman['kondisi'];
+        $pinjaman['created_at'];
+
+    }
+
+    //
+
+//output data pengembalian dari $_SESSION['kembali']
+
+ $data_balik=explode('!',$_SESSION['kembali']);
+    foreach($data_balik as $kembali){
+        if($kembali==null){continue;}
+        $kembali=unserialize($kembali);
+
+        $kembali['nama'];
+        $kembali['NSIN'];
+        $kembali['nama_barang'];
+        $kembali['kode_barang'];
+        $kembali['kondisi'];
+        $kembali['created_at'];
+
+    }
+
+ //
+
+
+
+
+
+*team creator
+    -yoga  -> team-leader 
+    -johan ->ui/ux & front-end 
+    -naim  ->data analisis
+    -dimas ->database planer
+    -ropiq ->back-end 
