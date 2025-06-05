@@ -69,6 +69,11 @@ try {
             );
         ");
     
+        $inserto = new PDO("mysql:host={$_SESSSION['servername']};dbname={$_SESSION['databases']}", $_SESSION['username_server'], $_SESSION['passsword_server']);
+        $inser=$inserto->prepare("INSERT INTO `users` (`name`,`email`,`password`) VALUES ('admin','example_a@gmail.com','admin123')");
+        $inser->execute();
+        $inserto=null;
+
     } catch (PDOException $e) {
         die("ERROR: " . $e->getMessage());
     }
