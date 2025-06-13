@@ -16,8 +16,7 @@ function output_peminjam($connection)
     }
 }
 
-function output_pengembalian($connection)
-{
+function output_pengembalian($connection){
     $kembali = $connection->prepare("SELECT * FROM `Pengembalian` ORDER BY `id` DESC");
     $kembali->execute();
     foreach ($kembali->fetchAll(PDO::FETCH_ASSOC) as $k) {
